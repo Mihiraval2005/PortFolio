@@ -1,6 +1,5 @@
-// import React from 'react'
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./Nav.css";
@@ -9,17 +8,15 @@ import navProfile from "../../assets/nav-profile.jpg";
 import menu from "../../assets/menu.png";
 
 const Nav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen((prevState) => !prevState);
 
   return (
     <div className="nav-center">
       <nav className="nav">
         <div className="logo">
-          <img src={navLogo} alt="" />
+          <img src={navLogo} alt="Logo" />
         </div>
         <ul className={`nav-list ${isMenuOpen ? "open" : ""}`}>
           <li>
@@ -43,13 +40,12 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        
         <div className="profile-img">
-          <img src={navProfile} alt="" />
+          <img src={navProfile} alt="Profile" />
         </div>
-        <div className="name">MIHIR RAVAL</div>
+        <div className="name">Mihir Raval</div>
         <div className="menu" onClick={toggleMenu}>
-          <img src={menu} alt="" />
+          <img src={menu} alt="Menu" />
         </div>
       </nav>
     </div>
