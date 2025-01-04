@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+.left h2{
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+}
+.left h1{
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+}
+.left span{
+    color: white;
+    font-size: 20px;
+}

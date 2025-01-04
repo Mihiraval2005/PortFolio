@@ -1,0 +1,259 @@
+/* Default Styles (Large Desktop and Extra Large Screens) */
+.nav-center {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100px;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(24, 24, 24, 0.2);
+    border: 1px solid rgba(124, 122, 122, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list .link-li {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-list .link-li:hover {
+    color: rgba(192, 228, 143, 1);
+}
+
+.name {
+    display: none;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+.menu img {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .nav-list .link-li {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .profile-img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .nav-list {
+        gap: 25px;
+    }
+
+    .nav-list .link-li {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .profile-img {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav {
+        width: 80%;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .nav-list .link-li {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .profile-img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Mobile Phones (max-width: 575px) */
+@media (max-width: 575px) {
+    .nav {
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        height: 45px;
+        width: auto
+    }
+
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list .open {
+        display: block;
+        height: auto;
+        background-color: aliceblue;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .menu img {
+        display: block;
+    }
+
+    .profile-img {
+        height: 50px;
+        width: 50px;
+        display: flex;
+    }
+}
+
+/* Small screens: 375px and below */
+@media (max-width: 375px) {
+    .nav {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .logo,
+    .nav-list {
+        display: none;
+    }
+
+    .name {
+        display: block;
+        color: white;
+        font-size: 15px;
+    }
+
+    .menu {
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+
+    .nav-list .open {
+        display: block;
+        height: auto;
+        background-color: aliceblue;
+    }
+
+    .menu img {
+        display: block;
+    }
+
+    .profile-img {
+        height: 40px;
+        width: 40px;
+        display: flex;
+    }
+}
