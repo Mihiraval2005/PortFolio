@@ -1,4 +1,4 @@
-// import React from "react";
+// import {Suspense,lazy} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./App.css";
@@ -13,6 +13,7 @@ import AnimatedCursor from "react-animated-cursor";
 const App = () => {
   return (
     <div className="containers">
+  
       <AnimatedCursor
         innerSize={9}
         outerSize={25}
@@ -55,6 +56,7 @@ const App = () => {
           </div>
         </div>
       </Router>
+   
     </div>
   );
 };

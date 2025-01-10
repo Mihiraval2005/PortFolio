@@ -1,9 +1,7 @@
 .contain {
     height: auto;
     width: 100%;
-    background-color: #1E201E;
-    border: 1px solid rgba(124, 122, 122, 0.8);
-    border-radius: 20px;
+   
     box-sizing: border-box;
 }
 
@@ -11,6 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1E201E;
+    border: 1px solid rgba(124, 122, 122, 0.8);
+    border-radius: 20px;
     padding: 50px 30px;
     flex-wrap: wrap;
 }
@@ -88,11 +89,39 @@ h2 {
 }
 
 .main-section-link {
+    margin-top: 100px;
     height: auto;
     width: 100%;
     padding: 0 0 30px 0;
     display: grid;
     place-items: center;
+    position: relative;
+}
+.main-section-link::before{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: -25px;
+    background-color: rgba(220, 199, 160, 0.382);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main-section-link::after{
+    position: absolute;
+    content: '';
+    height: 140px;
+    width: 140px;
+    top: -45px;
+    border-radius: 50%;
+    background-color: rgba(245, 222, 179, 0.17);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .main-section-link img {
