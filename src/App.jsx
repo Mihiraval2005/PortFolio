@@ -13,7 +13,6 @@ import AnimatedCursor from "react-animated-cursor";
 const App = () => {
   return (
     <div className="containers">
-  
       <AnimatedCursor
         innerSize={9}
         outerSize={25}
@@ -54,9 +53,12 @@ const App = () => {
               <Route path="/work" element={<Work />} />
             </Routes>
           </div>
+          <div className="redirect-btn">
+            <button className="footer-btn">Prev</button>
+            <button className="footer-btn">Next</button>
+          </div>
         </div>
       </Router>
-   
     </div>
   );
 };

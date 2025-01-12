@@ -1,0 +1,66 @@
+/* .contain {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.flex {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+    border: 1px solid rgba(124, 122, 122, 0.8);
+    border-radius: 20px;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+} */
+
+
+
+ 
+
+/* For devices with width between 992px to 1199px */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+    .flex {
+        padding: 50px 20px;
+    }
+
+    
+} */
+
+/* For devices with width between 768px to 991px */
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .flex {
+        padding: 30px 15px;
+        display: grid;
+        place-items: center;
+    }
+
+    
+} */
+
+/* For devices with width between 576px to 767px */
+/* @media (min-width: 576px) and (max-width: 767px) {
+    .flex {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    
+} */
+
+/* For devices with width below 576px */
+/* @media (max-width: 575px) {
+    
+} */
+
+/* For devices with width below 375px */
+/* @media (max-width: 375px) {
+    .flex {
+        padding: 0;
+    }
+
+    
+} */
